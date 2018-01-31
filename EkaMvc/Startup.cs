@@ -32,8 +32,7 @@ namespace EkaMvc
                 // Set a short timeout for easy testing.
                 options.IdleTimeout = TimeSpan.FromSeconds(10);
                 options.Cookie.HttpOnly = true;
-                options.Cookie.Name = ".Savonia.
-";
+                options.Cookie.Name = ".Savonia.Session";
             });
 
         }
