@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Users";
+}
+
+@model IEnumerable<UserViewModel>
+
+<h2>Users alla</h2>
+
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(Model => Model.Nimi)</th>
+        <th>@Html.DisplayNameFor(Model => Model.Osoite)</th>
+    </tr>
+   
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => item.Nimi) </td>
+                <td>@Html.DisplayFor(x => item.Osoite) </td>
+            </tr>
+        }
+    
+
+
+</table>
+
+

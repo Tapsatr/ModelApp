@@ -1,0 +1,19 @@
+﻿
+@{
+    
+}
+
+@model UserViewModel
+
+<h2>@ViewBag.Otsikko</h2>
+
+<!-- ALLA käyetty TAG helpereitä (vrt. HTML helperit) -->
+<form asp-controller="Student" method="post">
+    <label asp-for="Nimi"></label>
+    <input asp-for="Nimi"/>
+
+    <button type="submit">Send</button>
+</form>
+
+
+
